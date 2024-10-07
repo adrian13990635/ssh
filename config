@@ -1,0 +1,13 @@
+canonicalizeHostname always
+CanonicalDomains onca-owl.ts.net
+CanonicalizeFallbackLocal yes
+Match canonical all
+  IdentityFile ~/.ssh/onca-owl.ts.net
+  ForwardX11 yes
+Host github.com
+  User git
+  Port 22
+  IdentityFile ~/ssh/github
+  HostName github.com
+  TCPKeepAlive yes
+  IdentitiesOnly yes
